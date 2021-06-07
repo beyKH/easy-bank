@@ -190,7 +190,7 @@ img {
 }
 
 .hero {
-  /* position: relative; */
+  position: relative;
   /* padding: 300px 0; */
   background-image: url("../img/hero-bg-desktop.svg");
   background-repeat: no-repeat;
@@ -234,18 +234,11 @@ img {
 .hero__link {}
 
 
-.hero__content-img {
-  background-image: url("../img/hero-phones-desktop.svg");
+.hero__content-phone{
   position: absolute;
-  z-index: 99;
-  width: 800px;
-  height: 960px;
-  margin-left: 220px;
-  top: -45px;
-  left: 530px;
-
+  top:-20%;
+  left: 53%;
 }
-
 /* REPETEAD STYLES */
 
 .request-link {
@@ -520,4 +513,33 @@ img {
 .social__link svg:hover{
 
   fill: var(--main-accent-color);
+}
+
+
+.footer__middle {
+
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.footer__item {}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+
+.footer__link {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: var(--main-light-color);
+
 }
