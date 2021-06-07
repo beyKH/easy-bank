@@ -96,9 +96,11 @@ img {
 /* SITE-HEADER */
 .site__header {
   position: fixed;
+  z-index: 100;
   width: 100%;
   top: 0;
   left: 0;
+  background-color: var(--main-light-color);
 }
 
 .site__header__container {
@@ -107,8 +109,17 @@ img {
 }
 
 .logo {
-
+  transition: var(--main-transition);
 }
+
+.logo:hover{
+  opacity: 0.8;
+}
+
+.logo:active{
+  opacity: 0.6;
+}
+
 
 .logo__img {
   display: block;
@@ -179,9 +190,21 @@ img {
 }
 
 .hero {
-
+  /* position: relative; */
+  /* padding: 300px 0; */
+  background-image: url("../img/hero-bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 607px) -252px;
+  /* background-size: cover; */
 }
 
+
+
+.hero-container{
+  padding-top:170px ;
+  padding-bottom: 170px;
+  display: flex;
+}
 
 .hero__deatials {
   width: 447px;
@@ -211,8 +234,17 @@ img {
 .hero__link {}
 
 
+.hero-bg-hero{
+  background-image: url("../img/hero-phones-desktop.svg");
+  position: absolute;
+  z-index: 99;
+  width: 800px;
+  height: 900px;
+  margin-left: 200px;
+  top: -50px;
+  left: 650px;
 
-
+}
 
 /* REPETEAD STYLES */
 
