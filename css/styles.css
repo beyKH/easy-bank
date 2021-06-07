@@ -238,6 +238,8 @@ img {
   position: absolute;
   top:-20%;
   left: 53%;
+  z-index: 99;
+  overflow: hidden;
 }
 /* REPETEAD STYLES */
 
@@ -485,7 +487,7 @@ img {
 }
 
 .footer__start {
-
+  margin-right: 130px;
 
 }
 
@@ -517,7 +519,7 @@ img {
 
 
 .footer__middle {
-
+  width: 160px;
 }
 
 .footer__list {
@@ -541,5 +543,25 @@ img {
   line-height: 26px;
   letter-spacing: -0.2px;
   color: var(--main-light-color);
+  transition: var(--main-transition);
+}
 
+.footer__link:hover{
+  color: var(--main-accent-color);
+}
+.footer__link:active{
+  opacity: 0.6;
+}
+
+
+.footer__finish{
+  margin-left: auto;
+}
+
+.footer__sertification{
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
