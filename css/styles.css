@@ -234,7 +234,7 @@ img {
 .hero__link {}
 
 
-.hero-bg-hero{
+.hero__content-img {
   background-image: url("../img/hero-phones-desktop.svg");
   position: absolute;
   z-index: 99;
