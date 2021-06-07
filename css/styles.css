@@ -200,7 +200,7 @@ img {
 
 
 
-.hero-container{
+.hero__container{
   padding-top:170px ;
   padding-bottom: 170px;
   display: flex;
@@ -239,9 +239,9 @@ img {
   position: absolute;
   z-index: 99;
   width: 800px;
-  height: 900px;
+  height: 960px;
   margin-left: 200px;
-  top: -50px;
+  top: -45px;
   left: 530px;
 
 }
@@ -268,4 +268,113 @@ img {
 
 .request-link:active {
   opacity: 0.6;
+}
+
+
+/* ADVANTAGES */
+
+
+.advantages {
+  background-color: #F4F5F7;
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+
+.advantages__container {
+
+}
+
+.advantages__details {
+  width: 635px;
+
+}
+
+.advantages__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  color: var(--main-font-color);
+  font-weight: 100;
+  font-size: 40px;
+  line-height: 64px;
+  letter-spacing: -0.7px;
+}
+
+.advantages__info {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: var(--main-grey-color);
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.advantages__item {
+  width: 255px;
+}
+
+.advantages__item:not(:last-child){
+  margin-right: 30px;
+}
+
+.advantage {
+  display: block;
+}
+
+.advantage::before{
+  display: block;
+  margin-bottom: 40px;
+  content: '';
+  width: 72px;
+  height: 72px;
+  /* background-image: url("../img/icon-online-banking.svg"); */
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-shrink: 0;
+}
+
+/* BEFORE IMAGES */
+
+.online-banking::before{
+  background-image: url("../img/icon-online-banking.svg");
+
+}
+
+.simple-budget::before{
+  background-image: url("../img/simple-budget.svg");
+}
+
+.fast-onboarding{
+  background-repeat: no-repeat;
+  background-image: url("../img/fast-onboarding.svg");
+}
+
+.open-api{
+  background-repeat: no-repeat;
+  background-image: url("../img/open-api.svg");
+}
+
+.advantage__heading {
+  margin-top: 0;
+  margin-bottom: 26px;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+  color: var(--main-font-color);
+}
+
+.advantage__info{
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: var(--main-grey-color);
 }
